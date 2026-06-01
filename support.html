@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreatheFree — Support</title>
+    <style>
+        :root {
+            --bg: #fafafa;
+            --text: #1a1a1a;
+            --muted: #6b7280;
+            --border: #e5e7eb;
+            --accent: #10b981;
+            --card-bg: #ffffff;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #111111;
+                --text: #f0f0f0;
+                --muted: #9ca3af;
+                --border: #2d2d2d;
+                --accent: #34d399;
+                --card-bg: #1a1a1a;
+            }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 0.25rem; }
+        h2 { font-size: 1.2rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.75rem; }
+        p { margin-bottom: 0.75rem; }
+        .subtitle { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
+        .faq-item {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+        .faq-item summary {
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+        .faq-item p {
+            margin-top: 0.5rem;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .contact-card {
+            background: color-mix(in srgb, var(--accent) 8%, transparent);
+            border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-top: 1.5rem;
+        }
+        .contact-card p { margin-bottom: 0.5rem; }
+        .lang-switcher {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .lang-switcher button {
+            padding: 0.4rem 0.8rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: var(--bg);
+            color: var(--text);
+            cursor: pointer;
+            font-size: 0.85rem;
+        }
+        .lang-switcher button.active {
+            border-color: var(--accent);
+            background: color-mix(in srgb, var(--accent) 10%, transparent);
+            font-weight: 600;
+        }
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
+    </style>
+</head>
+<body>
+
+<div class="lang-switcher">
+    <button class="active" onclick="switchLang('en')">English</button>
+    <button onclick="switchLang('zh-hant')">繁體中文</button>
+    <button onclick="switchLang('ja')">日本語</button>
+</div>
+
+<!-- English -->
+<div id="lang-en" class="lang-section active">
+    <h1>Support</h1>
+    <p class="subtitle">BreatheFree — Quit Smoking Smarter</p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <details class="faq-item">
+        <summary>How do I reset my quit date?</summary>
+        <p>On the home screen, tap "Had a slip? It's okay to reset." at the bottom. This will record a relapse and offer you personalized support. You can then start a fresh quit session.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>Where is my data stored?</summary>
+        <p>All data is stored locally on your device. If you enable iCloud sync in Settings, a summary of your progress is also saved to your personal iCloud account. We never see or access your data.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>Can I transfer my data to a new device?</summary>
+        <p>Yes. You have two options: (1) Enable iCloud sync before switching devices, or (2) Use Settings → Export Data to save a JSON backup, then import it on your new device via Settings → Import Data.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>How do I delete all my data?</summary>
+        <p>Deleting the app removes all local data. To also remove iCloud data, go to Settings → disable iCloud sync before deleting the app, or clear it manually in iOS Settings → iCloud → Manage Storage.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>Why is there no free trial?</summary>
+        <p>BreatheFree is a one-time purchase with no subscriptions. We believe in transparent pricing — you pay once and get everything, forever. No paywalls, no hidden costs.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>Does this app replace medical advice?</summary>
+        <p>No. BreatheFree is a self-help tool based on cognitive restructuring techniques. It is not a substitute for professional medical advice. If you have health concerns related to smoking, please consult your doctor.</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>How do I request a refund?</summary>
+        <p>Refunds are handled by Apple. Visit <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a> and follow the instructions.</p>
+    </details>
+
+    <div class="contact-card">
+        <p><strong>Still need help?</strong></p>
+        <p>Email us at <a href="mailto:wawrikas@gmail.com">wawrikas@gmail.com</a></p>
+        <p style="color: var(--muted); font-size: 0.85rem;">We typically respond within 48 hours.</p>
+    </div>
+</div>
+
+<!-- Traditional Chinese -->
+<div id="lang-zh-hant" class="lang-section">
+    <h1>支援中心</h1>
+    <p class="subtitle">BreatheFree — 聰明戒菸</p>
+
+    <h2>常見問題</h2>
+
+    <details class="faq-item">
+        <summary>如何重置戒菸日期？</summary>
+        <p>在首頁底部點擊「不小心抽了？沒關係，可以重置。」，系統會記錄一次復吸並提供個人化支持。之後你可以開始新的戒菸旅程。</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>我的資料儲存在哪裡？</summary>
+        <p>所有資料僅儲存在你的裝置上。如果你在設定中啟用 iCloud 同步，進度摘要也會保存到你個人的 iCloud 帳號。我們永遠不會查看或存取你的資料。</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>換新裝置時如何轉移資料？</summary>
+        <p>有兩種方式：(1) 換機前啟用 iCloud 同步；(2) 使用設定 → 匯出資料保存 JSON 備份檔，在新裝置上透過設定 → 匯入資料恢復。</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>如何刪除所有資料？</summary>
+        <p>刪除 App 即移除所有本地資料。如需同時移除 iCloud 資料，請先在設定中停用 iCloud 同步再刪除 App，或在 iOS 設定 → iCloud → 管理儲存空間中手動清除。</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>為什麼沒有免費試用？</summary>
+        <p>BreatheFree 採用一次性購買模式，無訂閱制。我們相信透明定價——一次付費即享全部功能，永久使用。無付費牆、無隱藏費用。</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>這個 App 能取代醫療建議嗎？</summary>
+        <p>不能。BreatheFree 是基於認知重塑技術的自助工具，不能替代專業醫療建議。如果你有與吸菸相關的健康疑慮，請諮詢醫生。</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>如何申請退款？</summary>
+        <p>退款由 Apple 統一處理。請前往 <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a> 按照指引操作。</p>
+    </details>
+
+    <div class="contact-card">
+        <p><strong>還需要幫助？</strong></p>
+        <p>發送郵件至 <a href="mailto:wawrikas@gmail.com">wawrikas@gmail.com</a></p>
+        <p style="color: var(--muted); font-size: 0.85rem;">我們通常在 48 小時內回覆。</p>
+    </div>
+</div>
+
+<!-- Japanese -->
+<div id="lang-ja" class="lang-section">
+    <h1>サポート</h1>
+    <p class="subtitle">BreatheFree — スマートに禁煙</p>
+
+    <h2>よくある質問</h2>
+
+    <details class="faq-item">
+        <summary>禁煙開始日をリセットするには？</summary>
+        <p>ホーム画面下部の「吸ってしまった？大丈夫、リセットできます。」をタップしてください。再喫煙が記録され、パーソナライズされたサポートが提供されます。その後、新しい禁煙セッションを開始できます。</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>データはどこに保存されますか？</summary>
+        <p>すべてのデータはデバイス上にのみ保存されます。設定でiCloud同期を有効にすると、進捗の要約がお客様個人のiCloudアカウントにも保存されます。当社がお客様のデータを閲覧・アクセスすることはありません。</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>新しいデバイスにデータを移行するには？</summary>
+        <p>2つの方法があります：(1) 機種変更前にiCloud同期を有効にする、(2) 設定→データエクスポートでJSONバックアップを保存し、新しいデバイスで設定→データインポートから復元する。</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>すべてのデータを削除するには？</summary>
+        <p>アプリを削除するとすべてのローカルデータが削除されます。iCloudデータも削除するには、アプリ削除前に設定でiCloud同期を無効にするか、iOS設定→iCloud→ストレージ管理から手動で削除してください。</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>無料トライアルがないのはなぜですか？</summary>
+        <p>BreatheFreeは一度きりの購入でサブスクリプションはありません。透明な価格設定を信条としています——一度の支払いですべての機能を永久にご利用いただけます。</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>このアプリは医療アドバイスの代わりになりますか？</summary>
+        <p>なりません。BreatheFreeは認知再構築技術に基づくセルフヘルプツールであり、専門的な医療アドバイスの代替ではありません。喫煙に関する健康上の懸念がある場合は、医師にご相談ください。</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>返金を申請するには？</summary>
+        <p>返金はAppleが統一的に処理します。<a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a> にアクセスし、手順に従ってください。</p>
+    </details>
+
+    <div class="contact-card">
+        <p><strong>まだお困りですか？</strong></p>
+        <p>メール：<a href="mailto:wawrikas@gmail.com">wawrikas@gmail.com</a></p>
+        <p style="color: var(--muted); font-size: 0.85rem;">通常48時間以内に返信いたします。</p>
+    </div>
+</div>
+
+<hr>
+<p style="color: var(--muted); font-size: 0.8rem; text-align: center;">
+    <a href="privacy-policy.html">Privacy Policy</a> · © 2026 BreatheFree
+</p>
+
+<script>
+function switchLang(lang) {
+    document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-switcher button').forEach(el => el.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('active');
+    event.target.classList.add('active');
+}
+</script>
+</body>
+</html>
+
