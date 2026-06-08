@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BreatheFree — Support</title>
+    <title>MindQuit - Quit Smoking — Support</title>
     <style>
         :root {
             --bg: #fafafa;
@@ -92,15 +92,16 @@
 <body>
 
 <div class="lang-switcher">
-    <button class="active" onclick="switchLang('en')">English</button>
-    <button onclick="switchLang('zh-hant')">繁體中文</button>
-    <button onclick="switchLang('ja')">日本語</button>
+    <button class="active" onclick="switchLang(event, 'en')">English</button>
+    <button onclick="switchLang(event, 'zh-hant')">繁體中文</button>
+    <button onclick="switchLang(event, 'zh-hans')">简体中文</button>
+    <button onclick="switchLang(event, 'ja')">日本語</button>
 </div>
 
 <!-- English -->
 <div id="lang-en" class="lang-section active">
     <h1>Support</h1>
-    <p class="subtitle">BreatheFree — Quit Smoking Smarter</p>
+    <p class="subtitle">MindQuit - Quit Smoking — Mindset guide to stop smoking</p>
 
     <h2>Frequently Asked Questions</h2>
 
@@ -126,12 +127,12 @@
 
     <details class="faq-item">
         <summary>Why is there no free trial?</summary>
-        <p>BreatheFree is a one-time purchase with no subscriptions. We believe in transparent pricing — you pay once and get everything, forever. No paywalls, no hidden costs.</p>
+        <p>MindQuit - Quit Smoking is a one-time purchase with no subscriptions. We believe in transparent pricing — you pay once and get everything, forever. No paywalls, no hidden costs.</p>
     </details>
 
     <details class="faq-item">
         <summary>Does this app replace medical advice?</summary>
-        <p>No. BreatheFree is a self-help tool based on cognitive restructuring techniques. It is not a substitute for professional medical advice. If you have health concerns related to smoking, please consult your doctor.</p>
+        <p>No. MindQuit - Quit Smoking is a self-help tool based on cognitive restructuring techniques. It is not a substitute for professional medical advice. If you have health concerns related to smoking, please consult your doctor.</p>
     </details>
 
     <details class="faq-item">
@@ -149,7 +150,7 @@
 <!-- Traditional Chinese -->
 <div id="lang-zh-hant" class="lang-section">
     <h1>支援中心</h1>
-    <p class="subtitle">BreatheFree — 聰明戒菸</p>
+    <p class="subtitle">MindQuit - Quit Smoking — 用心態引導戒菸</p>
 
     <h2>常見問題</h2>
 
@@ -175,12 +176,12 @@
 
     <details class="faq-item">
         <summary>為什麼沒有免費試用？</summary>
-        <p>BreatheFree 採用一次性購買模式，無訂閱制。我們相信透明定價——一次付費即享全部功能，永久使用。無付費牆、無隱藏費用。</p>
+        <p>MindQuit - Quit Smoking 採用一次性購買模式，無訂閱制。我們相信透明定價——一次付費即享全部功能，永久使用。無付費牆、無隱藏費用。</p>
     </details>
 
     <details class="faq-item">
         <summary>這個 App 能取代醫療建議嗎？</summary>
-        <p>不能。BreatheFree 是基於認知重塑技術的自助工具，不能替代專業醫療建議。如果你有與吸菸相關的健康疑慮，請諮詢醫生。</p>
+        <p>不能。MindQuit - Quit Smoking 是基於認知重塑技術的自助工具，不能替代專業醫療建議。如果你有與吸菸相關的健康疑慮，請諮詢醫生。</p>
     </details>
 
     <details class="faq-item">
@@ -195,10 +196,59 @@
     </div>
 </div>
 
+<!-- Simplified Chinese -->
+<div id="lang-zh-hans" class="lang-section">
+    <h1>支持中心</h1>
+    <p class="subtitle">MindQuit - Quit Smoking — 用心态引导戒烟</p>
+
+    <h2>常见问题</h2>
+
+    <details class="faq-item">
+        <summary>如何重置戒烟日期？</summary>
+        <p>在首页底部点击「不小心抽了？没关系，可以重置。」，系统会记录一次复吸并提供个性化支持。之后你可以开始新的戒烟旅程。</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>我的数据存储在哪里？</summary>
+        <p>所有数据仅存储在你的设备上。如果你在设置中启用 iCloud 同步，进度摘要也会保存到你个人的 iCloud 账号。我们不会查看或访问你的数据。</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>换新设备时如何迁移数据？</summary>
+        <p>有两种方式：(1) 换机前启用 iCloud 同步；(2) 使用设置 → 导出数据保存 JSON 备份文件，在新设备上通过设置 → 导入数据恢复。</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>如何删除所有数据？</summary>
+        <p>删除 App 会移除所有本地数据。如需同时移除 iCloud 数据，请先在设置中停用 iCloud 同步再删除 App，或在 iOS 设置 → iCloud → 管理存储空间中手动清除。</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>为什么没有免费试用？</summary>
+        <p>MindQuit - Quit Smoking 采用一次性购买模式，无订阅制。我们坚持透明定价——一次付费即可解锁全部功能，永久使用，无付费墙、无隐藏费用。</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>这个 App 能替代医疗建议吗？</summary>
+        <p>不能。MindQuit - Quit Smoking 是基于认知重塑技术的自助工具，不能替代专业医疗建议。如果你有与吸烟相关的健康疑虑，请咨询医生。</p>
+    </details>
+
+    <details class="faq-item">
+        <summary>如何申请退款？</summary>
+        <p>退款由 Apple 统一处理。请前往 <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a> 按照指引操作。</p>
+    </details>
+
+    <div class="contact-card">
+        <p><strong>还需要帮助？</strong></p>
+        <p>发送邮件至 <a href="mailto:wawrikas@gmail.com">wawrikas@gmail.com</a></p>
+        <p style="color: var(--muted); font-size: 0.85rem;">我们通常在 48 小时内回复。</p>
+    </div>
+</div>
+
 <!-- Japanese -->
 <div id="lang-ja" class="lang-section">
     <h1>サポート</h1>
-    <p class="subtitle">BreatheFree — スマートに禁煙</p>
+    <p class="subtitle">MindQuit - Quit Smoking — マインドセットで禁煙へ</p>
 
     <h2>よくある質問</h2>
 
@@ -224,12 +274,12 @@
 
     <details class="faq-item">
         <summary>無料トライアルがないのはなぜですか？</summary>
-        <p>BreatheFreeは一度きりの購入でサブスクリプションはありません。透明な価格設定を信条としています——一度の支払いですべての機能を永久にご利用いただけます。</p>
+        <p>MindQuit - Quit Smokingは一度きりの購入でサブスクリプションはありません。透明な価格設定を信条としています——一度の支払いですべての機能を永久にご利用いただけます。</p>
     </details>
 
     <details class="faq-item">
         <summary>このアプリは医療アドバイスの代わりになりますか？</summary>
-        <p>なりません。BreatheFreeは認知再構築技術に基づくセルフヘルプツールであり、専門的な医療アドバイスの代替ではありません。喫煙に関する健康上の懸念がある場合は、医師にご相談ください。</p>
+        <p>なりません。MindQuit - Quit Smokingは認知再構築技術に基づくセルフヘルプツールであり、専門的な医療アドバイスの代替ではありません。喫煙に関する健康上の懸念がある場合は、医師にご相談ください。</p>
     </details>
 
     <details class="faq-item">
@@ -246,15 +296,15 @@
 
 <hr>
 <p style="color: var(--muted); font-size: 0.8rem; text-align: center;">
-    <a href="privacy-policy.html">Privacy Policy</a> · © 2026 BreatheFree
+    <a href="privacy-policy.html">Privacy Policy</a> · © 2026 MindQuit - Quit Smoking
 </p>
 
 <script>
-function switchLang(lang) {
-    document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
-    document.querySelectorAll('.lang-switcher button').forEach(el => el.classList.remove('active'));
-    document.getElementById('lang-' + lang).classList.add('active');
-    event.target.classList.add('active');
+function switchLang(event, lang) {
+    document.querySelectorAll(".lang-section").forEach(el => el.classList.remove("active"));
+    document.querySelectorAll(".lang-switcher button").forEach(el => el.classList.remove("active"));
+    document.getElementById("lang-" + lang).classList.add("active");
+    event.currentTarget.classList.add("active");
 }
 </script>
 </body>
